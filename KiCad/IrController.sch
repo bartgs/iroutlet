@@ -339,7 +339,7 @@ Wire Wire Line
 	3250 3700 3250 3800
 Connection ~ 3250 3800
 $Comp
-L IrOutlet-rescue:PIC16F15325-IrOutlet-IrOutlet-rescue-IrOutlet-rescue U1
+L IrOutlet:PIC16F15325 U1
 U 1 1 5FA43535
 P 4150 4200
 F 0 "U1" H 4150 4765 50  0000 C CNN
@@ -350,7 +350,7 @@ F 3 "${PROJECT_ROOT}/IrOutlet/doc/pic16f15325.pdf" H 4150 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L IrOutlet-rescue:AudioJack3-IrOutlet-IrOutlet-rescue-IrOutlet-rescue J11
+L IrOutlet:AudioJack3 J11
 U 1 1 5FA65205
 P 5100 6900
 AR Path="/5FA65205" Ref="J11"  Part="1" 
