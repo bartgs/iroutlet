@@ -1,0 +1,367 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 3 11
+Title "IrOutlet - IR Controller"
+Date "2020-11-08"
+Rev "2.0"
+Comp "@Home"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR010
+U 1 1 5FA402AB
+P 5050 3700
+F 0 "#PWR010" H 5050 3450 50  0001 C CNN
+F 1 "GND" H 5055 3527 50  0000 C CNN
+F 2 "" H 5050 3700 50  0001 C CNN
+F 3 "" H 5050 3700 50  0001 C CNN
+	1    5050 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 3700 5050 3900
+Wire Wire Line
+	5050 3900 4950 3900
+$Comp
+L power:GND #PWR08
+U 1 1 5FA442E6
+P 4550 7100
+F 0 "#PWR08" H 4550 6850 50  0001 C CNN
+F 1 "GND" H 4555 6927 50  0000 C CNN
+F 2 "" H 4550 7100 50  0001 C CNN
+F 3 "" H 4550 7100 50  0001 C CNN
+	1    4550 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR07
+U 1 1 5FA4480F
+P 4550 6700
+F 0 "#PWR07" H 4550 6550 50  0001 C CNN
+F 1 "VCC" H 4567 6873 50  0000 C CNN
+F 2 "" H 4550 6700 50  0001 C CNN
+F 3 "" H 4550 6700 50  0001 C CNN
+	1    4550 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J12
+U 1 1 5FA47474
+P 5250 5800
+F 0 "J12" H 5200 6200 50  0000 L CNN
+F 1 "ICSP" H 5200 6100 50  0000 L CNN
+F 2 "IrOutlet:HDR_1x5" H 5250 5800 50  0001 C CNN
+F 3 "~" H 5250 5800 50  0001 C CNN
+	1    5250 5800
+	1    0    0    -1  
+$EndComp
+Text Label 5150 4000 0    50   ~ 0
+DAT
+Text Label 5150 4100 0    50   ~ 0
+CLK
+Text Label 2750 4200 2    50   ~ 0
+MCLR
+Wire Wire Line
+	5150 4000 4950 4000
+Wire Wire Line
+	5150 4100 4950 4100
+Text Label 4800 5600 2    50   ~ 0
+MCLR
+Text Label 4800 5900 2    50   ~ 0
+DAT
+Text Label 4800 6000 2    50   ~ 0
+CLK
+$Comp
+L power:VCC #PWR09
+U 1 1 5FA4A836
+P 5000 5200
+F 0 "#PWR09" H 5000 5050 50  0001 C CNN
+F 1 "VCC" H 5017 5373 50  0000 C CNN
+F 2 "" H 5000 5200 50  0001 C CNN
+F 3 "" H 5000 5200 50  0001 C CNN
+	1    5000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5FA4AF18
+P 4550 6100
+F 0 "#PWR06" H 4550 5850 50  0001 C CNN
+F 1 "GND" H 4555 5927 50  0000 C CNN
+F 2 "" H 4550 6100 50  0001 C CNN
+F 3 "" H 4550 6100 50  0001 C CNN
+	1    4550 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5700 5050 5700
+Wire Wire Line
+	5050 5800 4550 5800
+Wire Wire Line
+	4550 5800 4550 6100
+Text Label 4800 6900 2    50   ~ 0
+IR
+Text Label 5150 4200 0    50   ~ 0
+IR
+Wire Wire Line
+	5150 4200 4950 4200
+Wire Wire Line
+	4800 6900 4900 6900
+Text Label 5150 4300 0    50   ~ 0
+OUT1
+Text Label 5150 4400 0    50   ~ 0
+OUT2
+Text Label 5150 4500 0    50   ~ 0
+OUT3
+Text Label 3150 4500 2    50   ~ 0
+OUT4
+Text Label 3150 4400 2    50   ~ 0
+OUT5
+Text Label 3150 4300 2    50   ~ 0
+OUT6
+Text Label 3150 4100 2    50   ~ 0
+OUT7
+Text Label 3150 4000 2    50   ~ 0
+OUT8
+Wire Wire Line
+	4950 4300 5150 4300
+Wire Wire Line
+	4950 4400 5150 4400
+Wire Wire Line
+	4950 4500 5150 4500
+Wire Wire Line
+	3150 4000 3350 4000
+Wire Wire Line
+	3150 4100 3350 4100
+Wire Wire Line
+	3150 4300 3350 4300
+Wire Wire Line
+	3150 4400 3350 4400
+Wire Wire Line
+	3150 4500 3350 4500
+Wire Wire Line
+	4550 7100 4550 7000
+Wire Wire Line
+	4550 7000 4900 7000
+Wire Wire Line
+	4550 6700 4550 6800
+Wire Wire Line
+	4550 6800 4900 6800
+Wire Wire Line
+	4800 5900 5050 5900
+Wire Wire Line
+	4800 6000 5050 6000
+Text HLabel 3150 5300 0    50   UnSpc ~ 0
+EN1
+Text HLabel 3150 5400 0    50   UnSpc ~ 0
+EN2
+Text HLabel 3150 5500 0    50   UnSpc ~ 0
+EN3
+Text HLabel 3150 5600 0    50   UnSpc ~ 0
+EN4
+Text HLabel 3150 5700 0    50   UnSpc ~ 0
+EN5
+Text HLabel 3150 5800 0    50   UnSpc ~ 0
+EN6
+Text HLabel 3150 5900 0    50   UnSpc ~ 0
+EN7
+Text HLabel 3150 6000 0    50   UnSpc ~ 0
+EN8
+Text Label 3350 5300 0    50   ~ 0
+OUT1
+Text Label 3350 5400 0    50   ~ 0
+OUT2
+Text Label 3350 5500 0    50   ~ 0
+OUT3
+Text Label 3350 5600 0    50   ~ 0
+OUT4
+Text Label 3350 5700 0    50   ~ 0
+OUT5
+Text Label 3350 5800 0    50   ~ 0
+OUT6
+Text Label 3350 5900 0    50   ~ 0
+OUT7
+Text Label 3350 6000 0    50   ~ 0
+OUT8
+Wire Wire Line
+	3150 5300 3350 5300
+Wire Wire Line
+	3150 5400 3350 5400
+Wire Wire Line
+	3150 5500 3350 5500
+Wire Wire Line
+	3150 5600 3350 5600
+Wire Wire Line
+	3150 5700 3350 5700
+Wire Wire Line
+	3150 5800 3350 5800
+Wire Wire Line
+	3150 5900 3350 5900
+Wire Wire Line
+	3150 6000 3350 6000
+$Comp
+L Device:D_Small_ALT D1
+U 1 1 5FA672F0
+P 4750 5300
+F 0 "D1" H 4750 5400 50  0000 C CNN
+F 1 "1N5819" H 4750 5200 50  0000 C CNN
+F 2 "IrOutlet:DIODE_H" V 4750 5300 50  0001 C CNN
+F 3 "${PROJECT_ROOT}/IrOutlet/doc/1n4007.pdf" V 4750 5300 50  0001 C CNN
+	1    4750 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5300 4550 5300
+Wire Wire Line
+	4550 5300 4550 5700
+Connection ~ 4550 5300
+$Comp
+L Device:C_Small C1
+U 1 1 5FA7407C
+P 3950 5700
+F 0 "C1" H 4000 5600 50  0000 L CNN
+F 1 "100nF" H 4000 5500 50  0000 L CNN
+F 2 "IrOutlet:C_L7.62mm_W3.2mm" H 3950 5700 50  0001 C CNN
+F 3 "${PROJECT_ROOT}/IrOutlet/doc/cap_cer.pdf" H 3950 5700 50  0001 C CNN
+	1    3950 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C2
+U 1 1 5FA746E3
+P 4250 5700
+F 0 "C2" H 4300 5600 50  0000 L CNN
+F 1 "100uF" H 4300 5500 50  0000 L CNN
+F 2 "IrOutlet:CAP_6.3mm_P2.50mm" H 4250 5700 50  0001 C CNN
+F 3 "~" H 4250 5700 50  0001 C CNN
+	1    4250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5FA74D8E
+P 3050 3800
+F 0 "R1" V 2850 3800 50  0000 C CNN
+F 1 "100k" V 2950 3800 50  0000 C CNN
+F 2 "IrOutlet:RES_H" H 3050 3800 50  0001 C CNN
+F 3 "${PROJECT_ROOT}/IrOutlet/doc/mfr-12.pdf" H 3050 3800 50  0001 C CNN
+	1    3050 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5FA7BD38
+P 4100 6100
+F 0 "#PWR05" H 4100 5850 50  0001 C CNN
+F 1 "GND" H 4105 5927 50  0000 C CNN
+F 2 "" H 4100 6100 50  0001 C CNN
+F 3 "" H 4100 6100 50  0001 C CNN
+	1    4100 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5800 3950 6000
+Wire Wire Line
+	3950 6000 4100 6000
+Wire Wire Line
+	4100 6000 4100 6100
+Wire Wire Line
+	4250 5800 4250 6000
+Wire Wire Line
+	4250 6000 4100 6000
+Connection ~ 4100 6000
+Wire Wire Line
+	3950 5600 3950 5400
+Wire Wire Line
+	3950 5400 4100 5400
+Wire Wire Line
+	4250 5400 4250 5600
+Wire Wire Line
+	4100 5400 4100 5300
+Wire Wire Line
+	4100 5300 4550 5300
+Connection ~ 4100 5400
+Wire Wire Line
+	4100 5400 4250 5400
+Wire Wire Line
+	4800 5600 5050 5600
+Wire Wire Line
+	4850 5300 5000 5300
+Wire Wire Line
+	5000 5300 5000 5200
+$Comp
+L power:VDD #PWR04
+U 1 1 5FA4E4C6
+P 4100 5200
+F 0 "#PWR04" H 4100 5050 50  0001 C CNN
+F 1 "VDD" H 4117 5373 50  0000 C CNN
+F 2 "" H 4100 5200 50  0001 C CNN
+F 3 "" H 4100 5200 50  0001 C CNN
+	1    4100 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5200 4100 5300
+Connection ~ 4100 5300
+$Comp
+L power:VDD #PWR03
+U 1 1 5FA504BA
+P 3250 3700
+F 0 "#PWR03" H 3250 3550 50  0001 C CNN
+F 1 "VDD" H 3267 3873 50  0000 C CNN
+F 2 "" H 3250 3700 50  0001 C CNN
+F 3 "" H 3250 3700 50  0001 C CNN
+	1    3250 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4200 2850 4200
+Connection ~ 2850 4200
+Wire Wire Line
+	2850 4200 3350 4200
+Wire Wire Line
+	3250 3900 3350 3900
+Wire Wire Line
+	3150 3800 3250 3800
+Wire Wire Line
+	3250 3800 3250 3900
+Wire Wire Line
+	2950 3800 2850 3800
+Wire Wire Line
+	2850 3800 2850 4200
+Wire Wire Line
+	3250 3700 3250 3800
+Connection ~ 3250 3800
+$Comp
+L IrOutlet-rescue:PIC16F15325-IrOutlet-IrOutlet-rescue-IrOutlet-rescue U1
+U 1 1 5FA43535
+P 4150 4200
+F 0 "U1" H 4150 4765 50  0000 C CNN
+F 1 "PIC16F15325" H 4150 4674 50  0000 C CNN
+F 2 "IrOutlet:DIP-14" H 4150 3550 50  0001 C CNN
+F 3 "${PROJECT_ROOT}/IrOutlet/doc/pic16f15325.pdf" H 4150 4200 50  0001 C CNN
+	1    4150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L IrOutlet-rescue:AudioJack3-IrOutlet-IrOutlet-rescue-IrOutlet-rescue J11
+U 1 1 5FA65205
+P 5100 6900
+AR Path="/5FA65205" Ref="J11"  Part="1" 
+AR Path="/5FA92C88/5FA65205" Ref="J11"  Part="1" 
+F 0 "J11" H 5150 7200 50  0000 R CNN
+F 1 "IrJack" H 5200 7100 50  0000 R CNN
+F 2 "IrOutlet:HDR_1x3" H 5100 6900 50  0001 C CNN
+F 3 "${PROJECT_ROOT}/IrOutlet/doc/tsop4836.pdf" H 5100 6900 50  0001 C CNN
+	1    5100 6900
+	-1   0    0    -1  
+$EndComp
+Text Notes 5000 7200 0    50   ~ 0
+TSOP4836
+$EndSCHEMATC

@@ -1,0 +1,290 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 1 11
+Title "IrOutlet"
+Date "2020-11-08"
+Rev "2.0"
+Comp "@Home"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3500 1150 3100 1150
+Wire Wire Line
+	3100 1150 3100 2150
+Wire Wire Line
+	3100 4150 3500 4150
+Wire Wire Line
+	3500 3150 3100 3150
+Connection ~ 3100 3150
+Wire Wire Line
+	3100 3150 3100 4150
+Wire Wire Line
+	3500 2150 3100 2150
+Connection ~ 3100 2150
+Wire Wire Line
+	3100 2150 3100 3150
+Wire Wire Line
+	3500 1250 3200 1250
+Wire Wire Line
+	3200 4250 3500 4250
+Wire Wire Line
+	3500 2250 3200 2250
+Connection ~ 3200 2250
+Wire Wire Line
+	3200 1250 3200 2250
+Wire Wire Line
+	3500 1350 3300 1350
+Wire Wire Line
+	3300 1350 3300 2350
+Wire Wire Line
+	3300 4350 3500 4350
+Wire Wire Line
+	3500 3350 3300 3350
+Connection ~ 3300 3350
+Wire Wire Line
+	3300 3350 3300 4350
+Wire Wire Line
+	3500 2350 3300 2350
+Connection ~ 3300 2350
+Wire Wire Line
+	3300 2350 3300 3350
+Wire Wire Line
+	3100 9150 3500 9150
+Connection ~ 3100 4150
+Wire Wire Line
+	3200 4250 3200 5250
+Wire Wire Line
+	3200 9250 3500 9250
+Connection ~ 3200 4250
+Wire Wire Line
+	3300 4350 3300 5350
+Wire Wire Line
+	3300 9350 3500 9350
+Connection ~ 3300 4350
+Wire Wire Line
+	3500 8250 3200 8250
+Connection ~ 3200 8250
+Wire Wire Line
+	3200 8250 3200 9250
+Wire Wire Line
+	3500 8150 3100 8150
+Connection ~ 3100 8150
+Wire Wire Line
+	3100 8150 3100 9150
+Wire Wire Line
+	3500 7350 3300 7350
+Connection ~ 3300 7350
+Wire Wire Line
+	3500 7250 3200 7250
+Connection ~ 3200 7250
+Wire Wire Line
+	3200 7250 3200 8250
+Wire Wire Line
+	3500 7150 3100 7150
+Connection ~ 3100 7150
+Wire Wire Line
+	3100 7150 3100 8150
+Wire Wire Line
+	3500 6350 3300 6350
+Connection ~ 3300 6350
+Wire Wire Line
+	3300 6350 3300 7350
+Wire Wire Line
+	3500 6250 3200 6250
+Connection ~ 3200 6250
+Wire Wire Line
+	3200 6250 3200 7250
+Wire Wire Line
+	3500 6150 3100 6150
+Wire Wire Line
+	3100 4150 3100 5150
+Connection ~ 3100 6150
+Wire Wire Line
+	3100 6150 3100 7150
+Wire Wire Line
+	3300 5350 3500 5350
+Connection ~ 3300 5350
+Wire Wire Line
+	3300 5350 3300 6350
+Wire Wire Line
+	3500 5250 3200 5250
+Connection ~ 3200 5250
+Wire Wire Line
+	3200 5250 3200 6250
+Wire Wire Line
+	3500 5150 3100 5150
+Connection ~ 3100 5150
+Wire Wire Line
+	3100 5150 3100 6150
+Wire Wire Line
+	3300 7350 3300 8350
+Wire Wire Line
+	3500 8350 3300 8350
+Connection ~ 3300 8350
+Wire Wire Line
+	3300 8350 3300 9350
+Wire Wire Line
+	5100 5400 4900 5400
+Wire Wire Line
+	4900 5400 4900 2250
+Wire Wire Line
+	4900 2250 4400 2250
+Wire Wire Line
+	5100 5500 4850 5500
+Wire Wire Line
+	4850 5500 4850 3250
+Wire Wire Line
+	4850 3250 4400 3250
+Wire Wire Line
+	5100 5600 4800 5600
+Wire Wire Line
+	4800 5600 4800 4250
+Wire Wire Line
+	4800 4250 4400 4250
+Wire Wire Line
+	5100 5700 4750 5700
+Wire Wire Line
+	4750 5700 4750 5250
+Wire Wire Line
+	4750 5250 4400 5250
+Wire Wire Line
+	5100 5800 4750 5800
+Wire Wire Line
+	4750 5800 4750 6250
+Wire Wire Line
+	4750 6250 4400 6250
+Wire Wire Line
+	5100 5900 4800 5900
+Wire Wire Line
+	4800 5900 4800 7250
+Wire Wire Line
+	4800 7250 4400 7250
+Wire Wire Line
+	5100 6000 4850 6000
+Wire Wire Line
+	4850 6000 4850 8250
+Wire Wire Line
+	4850 8250 4400 8250
+Wire Wire Line
+	5100 6100 4900 6100
+Wire Wire Line
+	4900 6100 4900 9250
+Wire Wire Line
+	4900 9250 4400 9250
+Wire Wire Line
+	3200 2250 3200 3250
+Wire Wire Line
+	3500 3250 3200 3250
+Connection ~ 3200 3250
+Wire Wire Line
+	3200 3250 3200 4250
+$Sheet
+S 3500 1000 900  500 
+U 5FA9021D
+F0 "PowerSupply" 50
+F1 "PowerSupply.sch" 50
+F2 "L1" U L 3500 1150 50 
+F3 "L2" U L 3500 1250 50 
+F4 "N" U L 3500 1350 50 
+$EndSheet
+$Sheet
+S 5100 5250 800  1000
+U 5FA92C88
+F0 "IrController" 50
+F1 "IrController.sch" 50
+F2 "EN1" U L 5100 5400 50 
+F3 "EN2" U L 5100 5500 50 
+F4 "EN3" U L 5100 5600 50 
+F5 "EN4" U L 5100 5700 50 
+F6 "EN5" U L 5100 5800 50 
+F7 "EN6" U L 5100 5900 50 
+F8 "EN7" U L 5100 6000 50 
+F9 "EN8" U L 5100 6100 50 
+$EndSheet
+$Sheet
+S 3500 2000 900  500 
+U 5FA95646
+F0 "RelaisDriver1.1" 50
+F1 "RelaisDriver1.sch" 50
+F2 "EN" U R 4400 2250 50 
+F3 "L1" U L 3500 2150 50 
+F4 "L2" U L 3500 2250 50 
+F5 "N" U L 3500 2350 50 
+$EndSheet
+$Sheet
+S 3500 3000 900  500 
+U 5FA96B62
+F0 "RelaisDriver1.2" 50
+F1 "RelaisDriver1.sch" 50
+F2 "EN" U R 4400 3250 50 
+F3 "L1" U L 3500 3150 50 
+F4 "L2" U L 3500 3250 50 
+F5 "N" U L 3500 3350 50 
+$EndSheet
+$Sheet
+S 3500 4000 900  500 
+U 5FA980A6
+F0 "RelaisDriver1.3" 50
+F1 "RelaisDriver1.sch" 50
+F2 "EN" U R 4400 4250 50 
+F3 "L1" U L 3500 4150 50 
+F4 "L2" U L 3500 4250 50 
+F5 "N" U L 3500 4350 50 
+$EndSheet
+$Sheet
+S 3500 5000 900  500 
+U 5FA99581
+F0 "RelaisDriver1.4" 50
+F1 "RelaisDriver1.sch" 50
+F2 "EN" U R 4400 5250 50 
+F3 "L1" U L 3500 5150 50 
+F4 "L2" U L 3500 5250 50 
+F5 "N" U L 3500 5350 50 
+$EndSheet
+$Sheet
+S 3500 6000 900  500 
+U 5FA9BF71
+F0 "RelaisDriver2.1" 50
+F1 "RelaisDriver2.sch" 50
+F2 "L1" U L 3500 6150 50 
+F3 "L2" U L 3500 6250 50 
+F4 "N" U L 3500 6350 50 
+F5 "EN" U R 4400 6250 50 
+$EndSheet
+$Sheet
+S 3500 7000 900  500 
+U 5FA9D5CD
+F0 "RelaisDriver2.2" 50
+F1 "RelaisDriver2.sch" 50
+F2 "L1" U L 3500 7150 50 
+F3 "L2" U L 3500 7250 50 
+F4 "N" U L 3500 7350 50 
+F5 "EN" U R 4400 7250 50 
+$EndSheet
+$Sheet
+S 3500 8000 900  500 
+U 5FAA0087
+F0 "RelaisDriver2.4" 50
+F1 "RelaisDriver2.sch" 50
+F2 "L1" U L 3500 8150 50 
+F3 "L2" U L 3500 8250 50 
+F4 "N" U L 3500 8350 50 
+F5 "EN" U R 4400 8250 50 
+$EndSheet
+$Sheet
+S 3500 9000 900  500 
+U 5FA9EAE9
+F0 "RelaisDriver2.3" 50
+F1 "RelaisDriver2.sch" 50
+F2 "L1" U L 3500 9150 50 
+F3 "L2" U L 3500 9250 50 
+F4 "N" U L 3500 9350 50 
+F5 "EN" U R 4400 9250 50 
+$EndSheet
+$EndSCHEMATC

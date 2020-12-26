@@ -1,0 +1,52 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# AudioJack3-IrOutlet-IrOutlet-rescue-IrOutlet-rescue
+#
+DEF AudioJack3-IrOutlet-IrOutlet-rescue-IrOutlet-rescue J 0 20 Y Y 1 F N
+F0 "J" 0 350 50 H V C CNN
+F1 "AudioJack3-IrOutlet-IrOutlet-rescue-IrOutlet-rescue" 0 250 50 H V C CNN
+F2 "IrOutlet:HDR_1x3" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Jack*
+$ENDFPLIST
+DRAW
+S -200 -200 -250 -100 0 1 10 F
+S 100 150 -200 -200 0 1 10 f
+P 4 0 1 10 0 -100 25 -125 50 -100 100 -100 N
+P 5 0 1 10 -75 -100 -50 -125 -25 -100 -25 0 100 0 N
+P 5 0 1 10 100 100 -100 100 -100 -100 -125 -125 -150 -100 N
+X ~ 1 200 100 100 L 50 50 1 1 P
+X ~ 2 200 0 100 L 50 50 1 1 P
+X ~ 3 200 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# PIC16F15325-IrOutlet-IrOutlet-rescue-IrOutlet-rescue
+#
+DEF PIC16F15325-IrOutlet-IrOutlet-rescue-IrOutlet-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 -450 50 H V C CNN
+F1 "PIC16F15325-IrOutlet-IrOutlet-rescue-IrOutlet-rescue" 0 -550 50 H V C CNN
+F2 "Package_DIP:DIP-14_W7.62mm_LongPads" 0 -650 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -700 400 700 -400 0 1 0 f
+X VDD 1 -800 300 100 R 50 50 1 1 W
+X RC0 10 800 -100 100 L 50 50 1 1 B
+X RA2 11 800 0 100 L 50 50 1 1 B
+X RA1(ICSPCLK) 12 800 100 100 L 50 50 1 1 B
+X RA0(ICSPDAT) 13 800 200 100 L 50 50 1 1 B
+X VSS 14 800 300 100 L 50 50 1 1 W
+X RA5 2 -800 200 100 R 50 50 1 1 B
+X RA4 3 -800 100 100 R 50 50 1 1 B
+X RA3(VPP/^MCLR) 4 -800 0 100 R 50 50 1 1 B
+X RC5 5 -800 -100 100 R 50 50 1 1 B
+X RC4 6 -800 -200 100 R 50 50 1 1 B
+X RC3 7 -800 -300 100 R 50 50 1 1 B
+X RC2 8 800 -300 100 L 50 50 1 1 B
+X RC1 9 800 -200 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library
